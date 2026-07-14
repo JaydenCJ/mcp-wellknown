@@ -1,0 +1,12 @@
+{
+  "name": "Fuzzy Time Inc",
+  "spec_version": "2025-06-18",
+  "servers": [
+    {
+      "name": "main",
+      "endpoint": "https://mcp.example.com/mcp",
+      "transport": "streamable-http"
+    }
+  ],
+  "updated_at": "last tuesday"
+}

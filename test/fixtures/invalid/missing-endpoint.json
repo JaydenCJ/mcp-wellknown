@@ -1,0 +1,11 @@
+{
+  "name": "Endpointless",
+  "spec_version": "2025-06-18",
+  "servers": [
+    {
+      "name": "main",
+      "transport": "streamable-http"
+    }
+  ],
+  "updated_at": "2026-06-01T12:00:00Z"
+}

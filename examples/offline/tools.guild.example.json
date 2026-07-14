@@ -1,0 +1,20 @@
+{
+  "name": "Internal Tools Guild",
+  "description": "Legacy SSE deployment kept for older clients.",
+  "version": "0.3.1-beta.2",
+  "spec_version": "2025-03-26",
+  "contact": "https://tools.guild.example/contact",
+  "updated_at": "2026-01-15T00:00:00Z",
+  "servers": [
+    {
+      "name": "wiki",
+      "endpoint": "https://mcp.guild.example/sse",
+      "transport": "sse",
+      "authentication": { "type": "bearer" },
+      "capabilities": {
+        "tools": true,
+        "resources": ["wiki://pages", "wiki://attachments"]
+      }
+    }
+  ]
+}

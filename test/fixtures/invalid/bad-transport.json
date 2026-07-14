@@ -1,0 +1,12 @@
+{
+  "name": "Websocket Fans",
+  "spec_version": "2025-06-18",
+  "servers": [
+    {
+      "name": "main",
+      "endpoint": "https://mcp.example.com/mcp",
+      "transport": "websocket"
+    }
+  ],
+  "updated_at": "2026-06-01T12:00:00Z"
+}

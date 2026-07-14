@@ -1,0 +1,12 @@
+{
+  "name": "Semver Spec Corp",
+  "spec_version": "1.0.0",
+  "servers": [
+    {
+      "name": "main",
+      "endpoint": "https://mcp.example.com/mcp",
+      "transport": "streamable-http"
+    }
+  ],
+  "updated_at": "2026-06-01T12:00:00Z"
+}

@@ -1,0 +1,63 @@
+{
+  "name": "mcp-wellknown",
+  "version": "0.1.0",
+  "description": "Reference implementation of MCP .well-known capability discovery: JSON Schema, validator, static generator, and crawler/index builder for /.well-known/mcp.json.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "well-known",
+    "discovery",
+    "capability-discovery",
+    "json-schema",
+    "validator",
+    "cli"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "mcp-wellknown": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./schema": "./schemas/mcp-wellknown.schema.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "schemas"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "pretest": "npm run build",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/mcp-wellknown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/mcp-wellknown/issues"
+  },
+  "homepage": "https://github.com/JaydenCJ/mcp-wellknown#readme",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  },
+  "author": "JaydenCJ"
+}

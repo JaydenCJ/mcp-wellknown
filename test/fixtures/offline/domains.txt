@@ -1,0 +1,5 @@
+# demo crawl list
+example.com
+mcp.acme.example  # inline comment
+plaintext.example.net
+ghost.example.org

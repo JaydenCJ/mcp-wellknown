@@ -1,0 +1,19 @@
+{
+  "outDir": ".",
+  "document": {
+    "name": "Fixture Org",
+    "description": "Config fixture used by the generate round-trip test.",
+    "version": "1.0.0",
+    "spec_version": "2025-06-18",
+    "contact": "mailto:mcp@fixture.example",
+    "servers": [
+      {
+        "name": "main",
+        "endpoint": "https://mcp.fixture.example/mcp",
+        "transport": "streamable-http",
+        "authentication": { "type": "none" },
+        "capabilities": { "tools": true, "resources": true }
+      }
+    ]
+  }
+}

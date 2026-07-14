@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/mcp-wellknown/mcp-wellknown/main/schemas/mcp-wellknown.schema.json",
+  "name": "Acme Developer Platform",
+  "description": "MCP servers for Acme's public developer platform.",
+  "version": "1.2.0",
+  "spec_version": "2025-06-18",
+  "contact": "mailto:mcp@acme.example",
+  "updated_at": "2026-05-20T08:30:00+02:00",
+  "servers": [
+    {
+      "name": "docs",
+      "description": "Search and fetch Acme product documentation.",
+      "endpoint": "https://mcp.acme.example/docs",
+      "transport": "streamable-http",
+      "authentication": { "type": "none" },
+      "capabilities": {
+        "tools": ["search_docs", "fetch_page"],
+        "resources": true,
+        "prompts": ["summarize_page"]
+      },
+      "docs": "https://developers.acme.example/mcp/docs"
+    },
+    {
+      "name": "issues",
+      "description": "Read and file issues in the Acme tracker.",
+      "endpoint": "https://mcp.acme.example/issues",
+      "transport": "sse",
+      "authentication": {
+        "type": "oauth2",
+        "scopes": ["issues:read", "issues:write"],
+        "authorization_server": "https://auth.acme.example"
+      },
+      "capabilities": {
+        "tools": ["list_issues", "create_issue"],
+        "logging": false
+      },
+      "docs": "https://developers.acme.example/mcp/issues"
+    }
+  ]
+}

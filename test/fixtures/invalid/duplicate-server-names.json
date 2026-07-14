@@ -1,0 +1,17 @@
+{
+  "name": "Copy Paste LLC",
+  "spec_version": "2025-06-18",
+  "servers": [
+    {
+      "name": "main",
+      "endpoint": "https://mcp.example.com/a",
+      "transport": "streamable-http"
+    },
+    {
+      "name": "main",
+      "endpoint": "https://mcp.example.com/b",
+      "transport": "sse"
+    }
+  ],
+  "updated_at": "2026-06-01T12:00:00Z"
+}

@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+*.tsbuildinfo
+
+# Test & coverage
+coverage/
+.vitest/
+
+# Generated demo output
+site/
+mcp-index/
+/.well-known/
+
+# Other ecosystems (kept for forks)
+.gradle/
+.build/
+
+# Model weights & large artifacts (never commit)
+models/
+*.gguf
+*.onnx
+*.safetensors
+*.mlmodelc
+*.mlpackage
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# Caches, editors & OS
+.DS_Store
+*.log
+.idea/
+.vscode/
+.cache/
+tmp/

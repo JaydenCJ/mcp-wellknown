@@ -1,0 +1,4 @@
+# Domains to crawl — one per line, comments allowed
+example.com
+mcp.acme.example
+tools.guild.example
